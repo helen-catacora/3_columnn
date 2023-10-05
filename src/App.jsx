@@ -1,14 +1,13 @@
 import { cars } from './assets/carsAPI'
 import './App.css'
-import Cars from './components/Cars'
+import Template from './components/Template'
+import Card from './components/Card'
 
 function App() {
   
   
   return (
-    <>
-      <Cars cars={cars}/>
-    </>
+    <Template/>
   )
 }
 
