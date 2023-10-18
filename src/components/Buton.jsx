@@ -1,14 +1,14 @@
 import React from 'react'
 import {cars} from '../assets/carsAPI'
 
-function Button(props) {
-    
-
+function Buton(props) {
+  const cars=props.cars
   return (
     <section className='boton'>
-        <a href={cars[0].link} target='blank' className='orange'>Learn More</a>
+      <a href={cars.link} target='blank' className={cars.theme}>Learn More</a>
     </section>
+
   )
 }
 
-export default Button
+export default Buton

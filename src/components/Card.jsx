@@ -1,14 +1,16 @@
 import React from 'react'
 import Cars from './Cars'
 import Buton from './Buton'
-import { cars } from '../assets/carsAPI'
 
-function Card() {
+function Card(props) {
+  const cars=props.cars
+  const theme=cars.theme;
   return (
-    <article className='orange card'>
-        <Cars cars={cars}/>
-        <Buton boton={cars}/>
+    <article className={theme+' card'}>
+      <Cars cars={cars}/>
+      <Buton cars={cars}/>
     </article>
+    
   )
 }
 

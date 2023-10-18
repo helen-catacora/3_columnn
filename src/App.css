@@ -8,7 +8,9 @@
 }
 
 .template{
+  margin: 20px 0 0 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 100vw;
@@ -25,22 +27,21 @@
 }
 
 section h2{
-  color: #fff;
+  color: var(--Very-light-gray-background-headings-buttons);
   font-family: 'Big Shoulders Display', cursive;
   font-size: 40px;
   margin: 20px 0 20px 0;
-  opacity: 0.9;
 }
 
 section p{
-  color: #fff;
-  opacity: 0.6;
+  color: var(--Transparent-white-paragraphs);
   font-size: 15px;
   line-height: 23px;
 }
 
 .boton{
   display: flex;
+  position: absolute;
 }
 
 .boton a{
@@ -50,7 +51,7 @@ section p{
   border-radius: 40px;
   width: 140px;
   height: 40px;
-  margin: 70px 0 0 0;
+  margin: 300px 0 0 0;
   text-decoration: none;
   align-items: center;
   justify-content: center;
@@ -61,11 +62,36 @@ section p{
 
 .boton a:hover{
   opacity: 0.7;
-  color: #fff;
+  color: var(--Very-light-gray-background-headings-buttons);
   background-color: transparent;
 }
 
 .orange{
   background-color: var(--Bright-orange);
   color: var(--Bright-orange);
+}
+
+.ligth_green{
+  background-color: var(--Dark-cyan);
+  color:var(--Dark-cyan);
+}
+
+.dark_green{
+  background-color: var(--Very-dark-cyan);
+  color: var(--Very-dark-cyan);
+}
+
+.red{
+  background-color:#9b0c09;
+  color: #9b0c09;
+}
+
+.violet{
+  background-color: #7c007c;
+  color: #7c007c;
+}
+
+.pink{
+  background-color: #df7688;
+  color: #df7688;
 }
